@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faby Essence Beauty | Beleza e Cosméticos</title>
+  <meta name="description" content="Faby Essence Beauty - Produtos de beleza, cosméticos e cuidados pessoais. Qualidade, elegância e praticidade.">
+  
+  <link rel="icon" href="logo.png">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f4f1;
+      color: #5a3e36;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #e8d5cc;
+    }
+
+    header img {
+      width: 140px;
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    button {
+      background: #b0897c;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #8c6a60;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e8d5cc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Faby Essence Beauty Logo">
+  <h1>Faby Essence Beauty</h1>
+  <p>Beleza, Elegância e Qualidade</p>
+</header>
+
+<div class="container">
+
+  <h2>🌸 Nossos Produtos</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300" alt="Produto 1">
+      <h3>Hidratante Facial</h3>
+      <div class="price">R$ 49,90</div>
+      <button onclick="addToCart('Hidratante Facial',49.90)">Adicionar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300" alt="Produto 2">
+      <h3>Gloss Labial</h3>
+      <div class="price">R$ 29,90</div>
+      <button onclick="addToCart('Gloss Labial',29.90)">Adicionar</button>
+    </div>
+
+  </div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/5569993844944" target="_blank">💬</a>
+
+<footer>
+  © 2026 Faby Essence Beauty - Todos os direitos reservados.
+</footer>
+
+<script>
+  let cart = [];
+
+  function addToCart(name, price) {
+    cart.push({name, price});
+    alert(name + " adicionado ao carrinho!");
+  }
+</script>
+
+</body>
+</html>
